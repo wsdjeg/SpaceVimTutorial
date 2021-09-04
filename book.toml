@@ -1,0 +1,9 @@
+[book]
+authors = ["Shidong Wang"]
+language = "en"
+multilingual = false
+src = "src"
+title = "SpaceVim 入门教程"
+
+[build]
+build-dir = "docs"
