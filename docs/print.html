@@ -151,16 +151,16 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#前言" id="前言">前言</a></h1>
-<p>SpaceVim是作者受spacemacs启发而开发的一套VIM配置，对新手来说，与其他vim配置的重要不同是“存在快捷键提示”，因此上手十分容易，使用时也减轻了大脑的负担。</p>
+<p>SpaceVim 是作者受 spacemacs 启发而开发的一套 VIM 配置，对新手来说，与其他 vim 配置的重要不同是“存在快捷键提示”，因此上手十分容易，使用时也减轻了大脑的负担。</p>
 <p>这篇教程</p>
 <ol>
-<li>假设用户已经具备vim的基本编辑能力。</li>
-<li>这篇教程目前仅面向macOS平台。</li>
+<li>假设用户已经具备 vim 的基本编辑能力。</li>
+<li>这篇教程目前仅面向 macOS 平台。</li>
 <li>教程每个章节会尽量简单，轻松阅读。</li>
 </ol>
 <p>让我们开始吧！</p>
 <h1><a class="header" href="#安装" id="安装">安装</a></h1>
-<p>这篇教程假设是在一个全新的macOS系统下进行安装，因此读者可以根据情况跳过某个章节。</p>
+<p>这篇教程假设是在一个全新的 macOS 系统下进行安装，因此读者可以根据情况跳过某个章节。</p>
 <h1><a class="header" href="#安装command-line-developer-tools" id="安装command-line-developer-tools">安装Command Line Developer Tools</a></h1>
 <p>如果你安装了Xcode并打开使用过，或者你很明白git、curl这些命令行工具已经安装了，那可以跳过这一步。</p>
 <p>如果没有安装过，那可以打开Terminal.app 然后输入git回车，系统检测到没有安装Command Line Developer Tools，会提示安装，如下图：</p>
@@ -216,7 +216,7 @@ brew cask install font-hack-nerd-font
 <p>iTerm2.app也需要单独配置字体：</p>
 <p><img src="install/media/15148306197631.jpg" alt="" /></p>
 <h1><a class="header" href="#基本使用" id="基本使用">基本使用</a></h1>
-<p>之所以叫SpaceVim，就是因为很多快捷键是空格键<space>作为第一个键。</p>
+<p>之所以叫 SpaceVim，就是因为很多快捷键是空格键<code>&lt;space&gt;</code>作为快捷键前缀。</p>
 <h1><a class="header" href="#感受空格键" id="感受空格键">感受空格键</a></h1>
 <p>打开MacVim，按下空格键，1秒后下方会出现一个提示窗口。</p>
 <p><img src="basic/media/15148262930439.jpg" alt="" /></p>
@@ -268,18 +268,20 @@ brew cask install font-hack-nerd-font
 <h1><a class="header" href="#总结" id="总结">总结</a></h1>
 <p>SpaceVim中的快捷键都容易记忆，窗口（window）就是w，文件（file）就是f，缓冲区（buffer）就是b，Tab管理就是t。再加上按SPC键后，每个功能都有字母提示，几乎不用再去找某个功能的文档。</p>
 <h1><a class="header" href="#简单配置" id="简单配置">简单配置</a></h1>
-<p>SpaceVim提供了我们可以自定义配置的文件，就是<code>~/.SpaceVim.d/init.vim</code>文件，所有自定义的内容都可以放到这个文件中。这个文件夹也就可以通过git管理起来。</p>
-<p>以下配置可参考<a href="https://github.com/everettjf/Dotfiles/blob/master/.SpaceVim.d/init.vim">我的配置文件</a></p>
+<p>SpaceVim 提供了我们可以自定义配置的文件，就是<code>~/.SpaceVim.d/init.toml</code>文件，</p>
+<p>所有自定义的内容都可以放到这个文件中。这个文件夹也就可以通过 git 管理起来。</p>
+<p>以下配置可参考<a href="https://github.com/wsdjeg/DotFiles/tree/master/SpaceVim.d">我的配置文件</a></p>
 <h1><a class="header" href="#空格键延迟" id="空格键延迟">空格键延迟</a></h1>
-<p>默认按下空格键是1秒后显示选项，由于刚刚上手，可以设置的短一些，例如200毫秒</p>
+<p>默认按下空格键是 1 秒后显示选项，由于刚刚上手，可以设置的短一些，例如 200 毫秒</p>
 <pre><code>set timeoutlen=200
 </code></pre>
 <h1><a class="header" href="#换个主题" id="换个主题">换个主题</a></h1>
-<p>所有支持的主题 https://github.com/rafi/awesome-vim-colorschemes</p>
-<pre><code>let g:spacevim_colorscheme = 'onedark'
+<p>所有支持的主题: <a href="https://spacevim.org/layers/colorscheme/">主题模块</a></p>
+<pre><code>[options]
+  colorscheme = &quot;onedark&quot;
 </code></pre>
 <h1><a class="header" href="#语言支持" id="语言支持">语言支持</a></h1>
-<p>有些语言我用不到，注释掉吧。（这里根据个人情况来，我主要是用vim来写Python和Go）</p>
+<p>有些语言我用不到，注释掉吧。（这里根据个人情况来，我主要是用 vim 来写 Python 和 Go）</p>
 <p><img src="media/15160267878835.jpg" alt="" /></p>
 <h1><a class="header" href="#字体配置-1" id="字体配置-1">字体配置</a></h1>
 <p>如果仔细看，可能会发现安装后有些显示问号（？）的地方，这是因为还需要配置一些字体。</p>
@@ -288,15 +290,16 @@ brew cask install font-hack-nerd-font
 <pre><code>brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 </code></pre>
-<p>对于MacVim，安装后在配置文件中加入：</p>
-<pre><code>let g:spacevim_guifont='Knack\ Nerd\ Font:h12'
+<p>对于 MacVim，安装后在配置文件中加入：</p>
+<pre><code>[options]
+  guifont='Knack Nerd Font:h12'
 </code></pre>
-<p>Terminal.app需要单独配置字体：</p>
+<p>Terminal.app 需要单独配置字体：</p>
 <p><img src="media/15148306746160.jpg" alt="" /></p>
-<p>iTerm2.app也需要单独配置字体：</p>
+<p>iTerm2.app 也需要单独配置字体：</p>
 <p><img src="media/15148306197631.jpg" alt="" /></p>
 <h1><a class="header" href="#总结-1" id="总结-1">总结</a></h1>
-<p>然后，就MacVim像我这样啦。</p>
+<p>然后，就 MacVim 像我这样啦。</p>
 <p><img src="media/15160268125722.jpg" alt="" /></p>
 <h1><a class="header" href="#空格键延迟-1" id="空格键延迟-1">空格键延迟</a></h1>
 <p>默认按下空格键是1秒后显示选项，由于刚刚上手，可以设置的短一些，例如200毫秒</p>
@@ -427,6 +430,21 @@ autocmd BufEnter *.m setlocal ft=objc
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

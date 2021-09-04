@@ -149,11 +149,11 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#前言" id="前言">前言</a></h1>
-<p>SpaceVim是作者受spacemacs启发而开发的一套VIM配置，对新手来说，与其他vim配置的重要不同是“存在快捷键提示”，因此上手十分容易，使用时也减轻了大脑的负担。</p>
+<p>SpaceVim 是作者受 spacemacs 启发而开发的一套 VIM 配置，对新手来说，与其他 vim 配置的重要不同是“存在快捷键提示”，因此上手十分容易，使用时也减轻了大脑的负担。</p>
 <p>这篇教程</p>
 <ol>
-<li>假设用户已经具备vim的基本编辑能力。</li>
-<li>这篇教程目前仅面向macOS平台。</li>
+<li>假设用户已经具备 vim 的基本编辑能力。</li>
+<li>这篇教程目前仅面向 macOS 平台。</li>
 <li>教程每个章节会尽量简单，轻松阅读。</li>
 </ol>
 <p>让我们开始吧！</p>
@@ -187,6 +187,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

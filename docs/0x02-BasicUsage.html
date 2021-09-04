@@ -149,7 +149,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#基本使用" id="基本使用">基本使用</a></h1>
-<p>之所以叫SpaceVim，就是因为很多快捷键是空格键<space>作为第一个键。</p>
+<p>之所以叫 SpaceVim，就是因为很多快捷键是空格键<code>&lt;space&gt;</code>作为快捷键前缀。</p>
 
                     </main>
 
@@ -188,6 +188,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
