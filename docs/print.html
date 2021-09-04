@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"></ol>
+                <ol class="chapter"><li class="expanded "><a href="0x00-Preface.html"><strong aria-hidden="true">1.</strong> 前言</a></li><li class="expanded "><a href="0x01-Install.html"><strong aria-hidden="true">2.</strong> 安装</a></li><li><ol class="section"><li class="expanded "><a href="install/1.html"><strong aria-hidden="true">2.1.</strong> 安装 Command Line Developer Tools</a></li><li class="expanded "><a href="install/2.html"><strong aria-hidden="true">2.2.</strong> 安装 MacVim</a></li><li class="expanded "><a href="install/3.html"><strong aria-hidden="true">2.3.</strong> 清理当前 vim 配置</a></li><li class="expanded "><a href="install/4.html"><strong aria-hidden="true">2.4.</strong> 安装 SpaceVim</a></li><li class="expanded "><a href="install/5.html"><strong aria-hidden="true">2.5.</strong> 命令行</a></li><li class="expanded "><a href="install/6.html"><strong aria-hidden="true">2.6.</strong> 字体配置</a></li></ol></li><li class="expanded "><a href="0x02-BasicUsage.html"><strong aria-hidden="true">3.</strong> 基础使用</a></li><li><ol class="section"><li class="expanded "><a href="basic/0.html"><strong aria-hidden="true">3.1.</strong> 感受空格键</a></li><li class="expanded "><a href="basic/1.html"><strong aria-hidden="true">3.2.</strong> 开始输入</a></li><li class="expanded "><a href="basic/2.html"><strong aria-hidden="true">3.3.</strong> 打开文件</a></li><li class="expanded "><a href="basic/3.html"><strong aria-hidden="true">3.4.</strong> 文件浏览器</a></li><li class="expanded "><a href="basic/4.html"><strong aria-hidden="true">3.5.</strong> 缓冲区管理</a></li><li class="expanded "><a href="basic/5.html"><strong aria-hidden="true">3.6.</strong> 窗口管理</a></li><li class="expanded "><a href="basic/6.html"><strong aria-hidden="true">3.7.</strong> Tab 管理</a></li><li class="expanded "><a href="basic/end.html"><strong aria-hidden="true">3.8.</strong> 总结</a></li></ol></li><li class="expanded "><a href="0x03-BasicConfig.html"><strong aria-hidden="true">4.</strong> 简单配置</a></li><li><ol class="section"><li class="expanded "><a href="config/1.html"><strong aria-hidden="true">4.1.</strong> 空格键延迟</a></li><li class="expanded "><a href="config/2.html"><strong aria-hidden="true">4.2.</strong> 换个主题</a></li><li class="expanded "><a href="config/3.html"><strong aria-hidden="true">4.3.</strong> 语言支持</a></li><li class="expanded "><a href="config/4.html"><strong aria-hidden="true">4.4.</strong> 字体配置</a></li><li class="expanded "><a href="config/end.html"><strong aria-hidden="true">4.5.</strong> 总结</a></li></ol></li><li class="expanded "><a href="0x04-Project.html"><strong aria-hidden="true">5.</strong> 工程管理</a></li><li><ol class="section"><li class="expanded "><a href="project/1.html"><strong aria-hidden="true">5.1.</strong> 模糊查找</a></li><li class="expanded "><a href="project/2.html"><strong aria-hidden="true">5.2.</strong> git 使用</a></li></ol></li><li class="expanded "><a href="0x05-Advance.html"><strong aria-hidden="true">6.</strong> 初步进阶</a></li><li><ol class="section"><li class="expanded "><a href="advance/1.html"><strong aria-hidden="true">6.1.</strong> 命令行</a></li><li class="expanded "><a href="advance/2.html"><strong aria-hidden="true">6.2.</strong> Terminal</a></li><li class="expanded "><a href="advance/3.html"><strong aria-hidden="true">6.3.</strong> Python 开发环境</a></li></ol></li><li class="expanded "><a href="Daily.html"><strong aria-hidden="true">7.</strong> 小知识</a></li><li><ol class="section"><li class="expanded "><a href="day/1.html"><strong aria-hidden="true">7.1.</strong> 1:相对行号</a></li><li class="expanded "><a href="day/2.html"><strong aria-hidden="true">7.2.</strong> 2:代码注释</a></li><li class="expanded "><a href="day/3.html"><strong aria-hidden="true">7.3.</strong> 3:录制宏</a></li><li class="expanded "><a href="day/4.html"><strong aria-hidden="true">7.4.</strong> 4:TagBar</a></li><li class="expanded "><a href="day/5.html"><strong aria-hidden="true">7.5.</strong> 5:设置文件语法类型</a></li><li class="expanded "><a href="day/6.html"><strong aria-hidden="true">7.6.</strong> 6:grep 当前文件(缓冲区)</a></li></ol></li><li class="expanded "><a href="Next.html"><strong aria-hidden="true">8.</strong> 下一步</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,7 +150,262 @@
 
                 <div id="content" class="content">
                     <main>
-                        
+                        <h1><a class="header" href="#前言" id="前言">前言</a></h1>
+<p>SpaceVim是作者受spacemacs启发而开发的一套VIM配置，对新手来说，与其他vim配置的重要不同是“存在快捷键提示”，因此上手十分容易，使用时也减轻了大脑的负担。</p>
+<p>这篇教程</p>
+<ol>
+<li>假设用户已经具备vim的基本编辑能力。</li>
+<li>这篇教程目前仅面向macOS平台。</li>
+<li>教程每个章节会尽量简单，轻松阅读。</li>
+</ol>
+<p>让我们开始吧！</p>
+<h1><a class="header" href="#安装" id="安装">安装</a></h1>
+<p>这篇教程假设是在一个全新的macOS系统下进行安装，因此读者可以根据情况跳过某个章节。</p>
+<h1><a class="header" href="#安装command-line-developer-tools" id="安装command-line-developer-tools">安装Command Line Developer Tools</a></h1>
+<p>如果你安装了Xcode并打开使用过，或者你很明白git、curl这些命令行工具已经安装了，那可以跳过这一步。</p>
+<p>如果没有安装过，那可以打开Terminal.app 然后输入git回车，系统检测到没有安装Command Line Developer Tools，会提示安装，如下图：</p>
+<p><img src="install/media/15148180217989.jpg" alt="" /></p>
+<p>点击Install，然后Agree就可以了。</p>
+<h1><a class="header" href="#安装macvim" id="安装macvim">安装MacVim</a></h1>
+<p>安装的方式有很多，这次我们使用Homebrew来安装。</p>
+<p>先安装Homebrew，打开Terminal.app，输入：</p>
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+<p>回车后，会提示输入密码，输入密码后，等待安装完成。</p>
+<p>然后，安装MacVim。</p>
+<pre><code>brew install macvim
+brew linkapps
+</code></pre>
+<p>（每行表示一次回车）</p>
+<p>安装完成后，可以在LaunchPad看到MacVim了。
+<img src="install/media/15148261067850.jpg" alt="" /></p>
+<h1><a class="header" href="#清理当前vim配置" id="清理当前vim配置">清理当前vim配置</a></h1>
+<p>打开Terminal.app</p>
+<pre><code>rm -rf ~/.vim
+rm ~/.vim*
+</code></pre>
+<h1><a class="header" href="#安装spacevim" id="安装spacevim">安装SpaceVim</a></h1>
+<p>打开Terminal.app</p>
+<pre><code>curl -sLf https://spacevim.org/install.sh | bash
+</code></pre>
+<p><img src="install/media/15148185878500.jpg" alt="" /></p>
+<p>完成后运行MacVim.app</p>
+<p><img src="install/media/15148189781244.jpg" alt="" /></p>
+<p>首次打开会提示选择一个模式，按键盘”1“选择第一个模式。然后，VIM会安装很多插件，等待安装完成。我这等了16分钟（986秒）安装完成。</p>
+<p><img src="install/media/15148200364085.jpg" alt="" /></p>
+<p>好了，退出MacVim，再次打开（再次打开可能有一些VIM插件更新），这次会更新插件，等待更新完成。（有些插件可能更新失败，目前先忽略，不影响当前教程的内容，如果需要的时候再去解决）</p>
+<p><img src="install/media/15148204804291.jpg" alt="" /></p>
+<p>好了，完成。</p>
+<p><img src="install/media/15148262223493.jpg" alt="" /></p>
+<h1><a class="header" href="#命令行" id="命令行">命令行</a></h1>
+<p>现在如果在Terminal.app中输入vim的话，仍然会打开系统的vim（版本较低）。输入以下命令即可在命令行使用MacVim的Terminal模式。</p>
+<pre><code>cd ~;echo &quot;alias vim=\&quot;mvim -v\&quot;&quot; &gt;&gt; .bash_profile; source .bash_profile
+</code></pre>
+<h1><a class="header" href="#字体配置" id="字体配置">字体配置</a></h1>
+<p>如果仔细看，可能会发现安装后有些显示问号（？）的地方，这是因为还需要配置一些字体。</p>
+<p>这里字体我们使用 https://github.com/ryanoasis/nerd-fonts</p>
+<p>可以这样安装：</p>
+<pre><code>brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+</code></pre>
+<p>对于MacVim，安装后在配置文件中加入：</p>
+<pre><code>let g:spacevim_guifont='Knack\ Nerd\ Font:h12'
+</code></pre>
+<p>Terminal.app需要单独配置字体：</p>
+<p><img src="install/media/15148306746160.jpg" alt="" /></p>
+<p>iTerm2.app也需要单独配置字体：</p>
+<p><img src="install/media/15148306197631.jpg" alt="" /></p>
+<h1><a class="header" href="#基本使用" id="基本使用">基本使用</a></h1>
+<p>之所以叫SpaceVim，就是因为很多快捷键是空格键<space>作为第一个键。</p>
+<h1><a class="header" href="#感受空格键" id="感受空格键">感受空格键</a></h1>
+<p>打开MacVim，按下空格键，1秒后下方会出现一个提示窗口。</p>
+<p><img src="basic/media/15148262930439.jpg" alt="" /></p>
+<p>如果要关闭这个窗口，可以按<code>ESC</code>。</p>
+<p>现在试试输入<code>空格键 字母f 字母t</code>（以后简称 SPC f t），可以关闭右侧的文件浏览器，再次输入<code>SPC f t</code>可以再打开。</p>
+<blockquote>
+<p>备注：上面的截图中存在？的问题，是制作此教程时，没有配置字体的原因。如果安装后配置了字体，不会存在显示？的情况。配置字体请见“安装-&gt;字体配置&quot;。</p>
+</blockquote>
+<h1><a class="header" href="#开始输入" id="开始输入">开始输入</a></h1>
+<p><img src="basic/media/15148267857073.jpg" alt="" /></p>
+<p>打开MacVim（以后简称vim）后，有两个提示选项<code>e</code>和<code>q</code>。按下<code>e</code>会打开一个空的编辑器，按下<code>q</code>则退出vim。</p>
+<p>现在输入<code>e</code>，然后输入一段程序：</p>
+<pre><code>int main(){
+    printf(&quot;Hello SpaceVim\n&quot;);
+    return 0;
+}
+</code></pre>
+<p>输入<code>:w hello.c</code>保存。</p>
+<p><img src="basic/media/15148271762929.jpg" alt="" /></p>
+<h1><a class="header" href="#打开文件" id="打开文件">打开文件</a></h1>
+<p>重新打开vim，如果此时我们想打开一个文件，例如打开HOME目录下的hello.c文件，输入<code>:e hello.c</code>。（这都是vim基本的使用方式）</p>
+<p><img src="basic/media/15148272950394.jpg" alt="" /></p>
+<p>打开后如图：</p>
+<p><img src="basic/media/15148274738594.jpg" alt="" /></p>
+<h1><a class="header" href="#文件浏览器" id="文件浏览器">文件浏览器</a></h1>
+<p>现在再回到右侧的文件浏览器上，试试按下<code>&lt;F3&gt;</code>也可以打开关闭。也就是 <code>&lt;F3&gt;</code> 或者 <code>SPC f t</code>都可以打开关闭文件浏览器。</p>
+<p>打开文件浏览器后，光标会进入文件浏览器中，这时可以输入<code>j</code>、<code>k</code>上下移动，<code>h</code>和<code>l</code>可以打开关闭文件夹。</p>
+<p>例如下图：按<code>j</code>移动到<code>hello.c</code>后，按回车或字母<code>l</code>都可以打开<code>hello.c</code>文件。
+<img src="basic/media/15148277916954.jpg" alt="" /></p>
+<h1><a class="header" href="#缓冲区管理" id="缓冲区管理">缓冲区管理</a></h1>
+<p>vim中打开的每个文件都可称为一个缓冲区（buffer），如果我们打开了多个文件，可以<code>SPC b b</code>显示列表：
+<img src="basic/media/15148282503848.jpg" alt="" /></p>
+<p>此时可以输入文件名过滤，例如输入<code>append</code>，然后回车，可以切换到<code>append.c</code>的文件。</p>
+<p>此外，这个节目还可以通过<code>ctrl+n</code>或<code>ctrl+p</code>来上下移动选择文件。</p>
+<p>如果要当前缓冲区，可以使用<code>SPC b d</code>。</p>
+<h1><a class="header" href="#窗口管理" id="窗口管理">窗口管理</a></h1>
+<p>输入<code>SPC w /</code>可在<code>右侧分割窗口</code>，输入<code>SPC w -</code>可在下方分割窗口。分隔完窗口后，光标会落到文件浏览器，此时可以通过文件浏览器选择某个文件打开文件。在选中文件回车后，会提示将文件放入哪个窗口中。如下图：
+<img src="basic/media/15148287032674.jpg" alt="" />
+此时输入<code>a</code>（不需要大写），就可以把文件放入A窗口。</p>
+<p>有了多个窗口，那如何切换呢？仔细看可以注意到<code>窗口左下角有编号</code>，</p>
+<p><img src="basic/media/15148288190619.jpg" alt="" /></p>
+<p>如果要切换到窗口1，则输入<code>SPC 1</code>即可切换过去。切换到窗口2则输入<code>SPC 2</code>，以此类推。这点可以说是相当方便了。</p>
+<p>还可以使用<code>SPC w TAB</code>（TAB表示Tab键）顺序切换窗口。</p>
+<h1><a class="header" href="#tab管理" id="tab管理">Tab管理</a></h1>
+<p>打开的文件多了，还可以使用Tab。现在输入<code>SPC w F</code>（注意是大写F），可以新建一个Tab页面。然后输入<code>SPC t t</code>显示Tab列表：</p>
+<p><img src="basic/media/15148290780148.jpg" alt="" /></p>
+<p>在Tab中可以上下选择（<code>j</code>、<code>k</code>移动光标）然后回车切换。</p>
+<p>也可以使用<code>SPC w o</code>顺序切换Tab。</p>
+<h1><a class="header" href="#总结" id="总结">总结</a></h1>
+<p>SpaceVim中的快捷键都容易记忆，窗口（window）就是w，文件（file）就是f，缓冲区（buffer）就是b，Tab管理就是t。再加上按SPC键后，每个功能都有字母提示，几乎不用再去找某个功能的文档。</p>
+<h1><a class="header" href="#简单配置" id="简单配置">简单配置</a></h1>
+<p>SpaceVim提供了我们可以自定义配置的文件，就是<code>~/.SpaceVim.d/init.vim</code>文件，所有自定义的内容都可以放到这个文件中。这个文件夹也就可以通过git管理起来。</p>
+<p>以下配置可参考<a href="https://github.com/everettjf/Dotfiles/blob/master/.SpaceVim.d/init.vim">我的配置文件</a></p>
+<h1><a class="header" href="#空格键延迟" id="空格键延迟">空格键延迟</a></h1>
+<p>默认按下空格键是1秒后显示选项，由于刚刚上手，可以设置的短一些，例如200毫秒</p>
+<pre><code>set timeoutlen=200
+</code></pre>
+<h1><a class="header" href="#换个主题" id="换个主题">换个主题</a></h1>
+<p>所有支持的主题 https://github.com/rafi/awesome-vim-colorschemes</p>
+<pre><code>let g:spacevim_colorscheme = 'onedark'
+</code></pre>
+<h1><a class="header" href="#语言支持" id="语言支持">语言支持</a></h1>
+<p>有些语言我用不到，注释掉吧。（这里根据个人情况来，我主要是用vim来写Python和Go）</p>
+<p><img src="media/15160267878835.jpg" alt="" /></p>
+<h1><a class="header" href="#字体配置-1" id="字体配置-1">字体配置</a></h1>
+<p>如果仔细看，可能会发现安装后有些显示问号（？）的地方，这是因为还需要配置一些字体。</p>
+<p>这里字体我们使用 https://github.com/ryanoasis/nerd-fonts</p>
+<p>可以这样安装：</p>
+<pre><code>brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+</code></pre>
+<p>对于MacVim，安装后在配置文件中加入：</p>
+<pre><code>let g:spacevim_guifont='Knack\ Nerd\ Font:h12'
+</code></pre>
+<p>Terminal.app需要单独配置字体：</p>
+<p><img src="media/15148306746160.jpg" alt="" /></p>
+<p>iTerm2.app也需要单独配置字体：</p>
+<p><img src="media/15148306197631.jpg" alt="" /></p>
+<h1><a class="header" href="#总结-1" id="总结-1">总结</a></h1>
+<p>然后，就MacVim像我这样啦。</p>
+<p><img src="media/15160268125722.jpg" alt="" /></p>
+<h1><a class="header" href="#空格键延迟-1" id="空格键延迟-1">空格键延迟</a></h1>
+<p>默认按下空格键是1秒后显示选项，由于刚刚上手，可以设置的短一些，例如200毫秒</p>
+<pre><code>set timeoutlen=200
+</code></pre>
+<h1><a class="header" href="#换个主题-1" id="换个主题-1">换个主题</a></h1>
+<p>所有支持的主题 https://github.com/rafi/awesome-vim-colorschemes</p>
+<pre><code>let g:spacevim_colorscheme = 'onedark'
+</code></pre>
+<h1><a class="header" href="#语言支持-1" id="语言支持-1">语言支持</a></h1>
+<p>有些语言我用不到，注释掉吧。（这里根据个人情况来，我主要是用vim来写Python和Go）</p>
+<p><img src="config/media/15160267878835.jpg" alt="" /></p>
+<h1><a class="header" href="#字体配置-2" id="字体配置-2">字体配置</a></h1>
+<p>这个章节已经移动到了<strong>安装</strong>部分。</p>
+<h1><a class="header" href="#总结-2" id="总结-2">总结</a></h1>
+<p>然后，就MacVim像我这样啦。</p>
+<p><img src="config/media/15160268125722.jpg" alt="" /></p>
+<h1><a class="header" href="#工程管理" id="工程管理">工程管理</a></h1>
+<p>工程的定义：
+SpaceVim会从当前文件自动向上查找<code>.git</code>目录或者<code>.projections.json</code>文件的目录作为根目录。</p>
+<p>输入<code>SPC p</code>可以看到支持的功能。</p>
+<p><img src="media/15160268772856.jpg" alt="" /></p>
+<h1><a class="header" href="#模糊查找" id="模糊查找">模糊查找</a></h1>
+<p>最常用的功能就是模糊查找了，<code>SPC p /</code>输入任意字符串后回车</p>
+<p><img src="project/media/15160268992458.jpg" alt="" /></p>
+<p>在这个窗口中可以按<code>jk</code>上下选择，可以按<code>q</code>退出。</p>
+<h1><a class="header" href="#git使用" id="git使用">git使用</a></h1>
+<p><code>SPC g s</code> 查看状态</p>
+<p><img src="project/media/15160270155453.jpg" alt="" /></p>
+<p><code>SPC g A</code> 添加所有文件
+<code>SPC g S</code> 添加当前文件</p>
+<p><code>SPC g c</code> 设置commit message，最后 :wq 表示完成并commit
+<img src="project/media/15160270962516.jpg" alt="" /></p>
+<p><code>SPC g p</code> 开始push</p>
+<p>成功后会有提示：
+<img src="project/media/15160272103034.jpg" alt="" /></p>
+<h1><a class="header" href="#初步进阶" id="初步进阶">初步进阶</a></h1>
+<p>玩点相对“高级”的。</p>
+<h1><a class="header" href="#命令行-1" id="命令行-1">命令行</a></h1>
+<p>SPC ! 然后输入 ls，最后 :q 退出</p>
+<h1><a class="header" href="#terminal" id="terminal">Terminal</a></h1>
+<p><code>:terminal</code></p>
+<h1><a class="header" href="#python开发环境" id="python开发环境">Python开发环境</a></h1>
+<p>安装jedi后可支持自动补全。</p>
+<pre><code>pip install jedi
+</code></pre>
+<h2><a class="header" href="#与pyenv配合" id="与pyenv配合">与pyenv配合</a></h2>
+<p>假设已经安装了 pyenv 和 Oh my zsh，</p>
+<ol>
+<li>.bash_profile</li>
+<li>.zprofile</li>
+</ol>
+<p>在以上两个文件中加入：<code>export PATH=&quot;$HOME/.pyenv/shims:$PATH&quot;</code>。</p>
+<h1><a class="header" href="#小知识" id="小知识">小知识</a></h1>
+<p>一些简单的使用或配置方法，都是我日常开发中使用的。</p>
+<h1><a class="header" href="#相对行号" id="相对行号">相对行号</a></h1>
+<p>SpaceVim默认使用了相对行号，我不习惯：</p>
+<pre><code>&quot; Relative line number
+let g:spacevim_relativenumber = 0
+</code></pre>
+<p>把这行加入~/.SpaceVim.d/init.vim中，就好了。</p>
+<p><img src="day/media/15159441901930.jpg" alt="" /></p>
+<h1><a class="header" href="#注释" id="注释">注释</a></h1>
+<p><code>&lt;SPC&gt; c l</code> 注释选择的行。一般我会<code>V</code>然后选择多行，然后按<code>&lt;SPC&gt; c l</code>注释掉选择的行。取消注释也是这样。<code>c l</code>就是<code>comment lines</code>的意思。</p>
+<p>当然按下<code>&lt;SPC&gt; c</code>后会有很多选择，我是感觉记不住也很少用哈。</p>
+<p><img src="day/media/15159452472079.jpg" alt="" /></p>
+<h1><a class="header" href="#补充" id="补充">补充</a></h1>
+<p>如果觉得<code>SPC c l</code>稍微麻烦（不同字母嘛），添加下面的代码到init.vim。</p>
+<pre><code>call SpaceVim#custom#SPC('nmap', ['c', 'c'], '&lt;Plug&gt;NERDCommenterInvert', 'comment or uncomment lines', 0)
+</code></pre>
+<p>就可以使用<code>SPC c c</code>作为注释快捷键了。</p>
+<p>当然相同字母可能就 hurt your fingers。</p>
+<h1><a class="header" href="#录制宏" id="录制宏">录制宏</a></h1>
+<p>SpaceVim的录制宏操作，修改了vim的默认快捷键。个人感觉不太好，但或许大佬们有自己的理由。</p>
+<p>但习惯了也就没什么问题了。</p>
+<p>Normal mode 下按下<code>\ q r</code> 开始或结束录制。</p>
+<h1><a class="header" href="#tagbar" id="tagbar">TagBar</a></h1>
+<p>需要先安装ctags，macOS下可以如下安装：</p>
+<pre><code>brew install ctags
+</code></pre>
+<p>安装后可以如下看下是否安装成功：</p>
+<pre><code>[everettjf@e ~ ]$ ctags --version
+Exuberant Ctags 5.8, Copyright (C) 1996-2009 Darren Hiebert
+  Compiled: Sep 17 2017, 20:48:43
+  Addresses: &lt;dhiebert@users.sourceforge.net&gt;, http://ctags.sourceforge.net
+  Optional compiled features: +wildcards, +regex
+</code></pre>
+<p>然后打开一个cpp文件（或者其他源代码文件），按<code>F2</code>就可以在左侧看到TagBar啦。
+<img src="day/media/15160266938977.jpg" alt="" /></p>
+<p>可以<code>SPC 1</code>移动到TagBar的窗口，选择后回车就可以跳转到对应的函数（方法）。</p>
+<h1><a class="header" href="#设置文件语法类型" id="设置文件语法类型">设置文件语法类型</a></h1>
+<p>作为一名主页iOS开发，打开Objective-C源文件(*.m)时，SpaceVim会识别为matlab文件，添加如下代码可以修复过来：</p>
+<pre><code>&quot; Set .m file type default to objc
+autocmd BufEnter *.m setlocal ft=objc
+
+</code></pre>
+<p><img src="day/media/15161149171252.jpg" alt="" /></p>
+<h1><a class="header" href="#grep当前文件缓冲区" id="grep当前文件缓冲区">grep当前文件（缓冲区）</a></h1>
+<p><code>SPC s s</code> 可以在当前打开的文件（缓冲区）执行grep搜索。</p>
+<p>例如下图grep <code>brew</code>四个字符。</p>
+<p><img src="day/media/15162030415613.jpg" alt="" /></p>
+<p>输入完成<code>brew</code>后，可以按<code>esc</code>，然后就可以按<code>jk</code>来上下选择，在想定位的一行回车，就可以直接到目的行。如果不想回车，可以按<code>q</code>退出。</p>
+<p><img src="day/media/15162032110980.jpg" alt="" /></p>
+<h1><a class="header" href="#下一步" id="下一步">下一步</a></h1>
+<ol>
+<li>阅读一遍文档 http://spacevim.org/documentation/ 。</li>
+<li>加入QQ群 121056965 或 <a href="https://gitter.im/SpaceVim/SpaceVim">Gitter</a>，和大家交流。</li>
+</ol>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -172,21 +427,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
